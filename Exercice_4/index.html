@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 4</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <button type="button" id="b1">1</button>
+  <button type="button" id="b2">2</button>
+  <button type="button" id="b3">3</button>
+  <button type="button" id="b4">4</button>
+  <button type="button" id="b5">5</button>
+  <div id="figure">
+
+  </div>
+
+</div>
+<script>
+$('#b2').click(function(){
+  $('#figure').css('background-color', 'green');
+});
+$('#b3').click(function(){
+  $('#figure').css('background-color', 'red');
+});
+$('#b4').click(function(){
+  $('#figure').hide();
+});
+$('#b5').click(function(){
+  $('#figure').show();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 2</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <button type="button" id="min">-</button>
+  <button type="button" id="plus">+</button>
+  <p>Clicks: <a id="counter">0</a></p>
+</div>
+<script>
+$('#min').click(function() {
+    $('#counter').html(function(i, val) { return val*1-1 });
+});
+$('#plus').click(function() {
+    $('#counter').html(function(i, val) { return val*1+1 });
+});
+</script>
+</body>
+</html>

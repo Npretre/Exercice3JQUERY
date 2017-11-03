@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<title>Exerccie 5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="index.html" method="post">
+      <input type="text" name="oneDirection" value="">
+      <div style = "width:50px; height:50px; background:black;">
+      </div>
+    </form>
+    <script>
+    $(function() {
+      $('input').keypress(function(touch) {
+          var apply = touch.which || touch.keyCode;
+            if (apply == 39) {
+              $('div').css('margin-left' , '+=10px');
+            }else if (apply == 37) {
+              $('div').css('margin-left' , '-=10px');
+            }else if (apply == 40) {
+              $('div').css('margin-top' , '+=10px');
+            }else if (apply == 38) {
+              $('div').css('margin-top' , '-=10px');
+            }else {
+            }
+             if ($('div').offset().left >= 1900) {
+               $('div').css('margin-left' , '0px');
+             }else if ($('div').offset().left <= 4) {
+               $('div').css('margin-left' , '1900px');
+           }else if ($('div').offset().top >= 1080) {
+               $('div').css('margin-top' , '0px');
+             }else if ($('div').offset().top <= 4) {
+               $('div').css('margin-top' , '1080px');
+             }else {
+             }
+           })
+        })
+    </script>
+
+</body>
+</html>
